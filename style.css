@@ -10,6 +10,7 @@ html {
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+
   /* outline: solid red 1px; */
 }
 
@@ -495,6 +496,31 @@ textarea {
   display: block;
 }
 
+.pop-btns {
+  display: flex;
+  gap: 5px;
+}
+
+.close-popup {
+  position: absolute;
+  left: 82%;
+  font-size: 15px;
+}
+
+.bg {
+  display: none;
+  background: #c1c7d0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+.d-popup {
+  display: block;
+}
+
 @media only screen and (max-width: 768px) {
   .menu-animation {
     background: white;
@@ -514,7 +540,6 @@ textarea {
     display: block;
     padding: 10px;
   }
-
 
   .logoforJS h2 {
     font-size: 18px;
@@ -538,6 +563,7 @@ textarea {
     color: #344563;
     height: 0;
     width: 100%;
+
     /* overflow: hidden; */
   }
 
@@ -626,7 +652,8 @@ textarea {
   }
 
   .project-card1 {
-    width: 50%;
+    width: 100%;
+    padding-bottom: 20px;
   }
 
   .project-card2 {
@@ -681,24 +708,41 @@ textarea {
     align-items: center;
   }
 
-
   .links li a {
-    color:#2230d2;
+    color: #2230d2;
     font-size: 15px;
   }
 
   .links {
     display: flex;
     background: transparent;
-  
     position: absolute;
     top: -12%;
     width: auto;
     left: 69%;
     z-index: 1;
   }
-  
+
   .links li {
     margin-top: 25px;
+  }
+
+  .project-card2 {
+    width: 100%;
+  }
+
+  .pop-text {
+    display: flex;
+    gap: 20px;
+  }
+
+  .text-pop {
+    flex-basis: 65%;
+    text-align: justify;
+  }
+
+  .pop-up-card {
+    display: flex;
+    flex-direction: column;
   }
 }
